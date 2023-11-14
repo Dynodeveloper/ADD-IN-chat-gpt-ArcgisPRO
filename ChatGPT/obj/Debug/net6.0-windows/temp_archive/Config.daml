@@ -1,0 +1,37 @@
+﻿<ArcGIS defaultAssembly="ChatGPT.dll" defaultNamespace="ChatGPT" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{b135b65b-5d6a-4a94-8a49-f4f7d90b53f5}" version="1.0" desktopVersion="3.1.41833">
+    <Name>ChatGPT</Name>
+    <Description>ChatGPT description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>cesar</Author>
+    <Company>Acme</Company>
+    <Date>8/7/2023 10:40:21 PM</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="ChatGPT_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <!--<tab id="ChatGPT_Tab1" caption="New Tab">
+          <group refID="ChatGPT_Group1"/>
+        </tab>-->
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="ChatGPT_Group1" caption="Ask OpenAI" appearsOnAddInTab="true">
+          <!-- host controls within groups -->
+          <button refID="ChatGPT_Views_ProWindow1" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <button id="ChatGPT_Views_ProWindow1" caption="Chat-GPT" className="ChatGPT.Views.ShowProWindow1" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple32.png">
+          <tooltip heading="Ventana de dialogo">Modelo de lenguaje y extraccion de texto<disabledText /></tooltip>
+        </button>
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>

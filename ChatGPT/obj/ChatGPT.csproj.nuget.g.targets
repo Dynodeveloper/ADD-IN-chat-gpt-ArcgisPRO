@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)esri.arcgisruntime\200.2.0\buildTransitive\net6.0-windows7.0\Esri.ArcGISRuntime.targets" Condition="Exists('$(NuGetPackageRoot)esri.arcgisruntime\200.2.0\buildTransitive\net6.0-windows7.0\Esri.ArcGISRuntime.targets')" />
+    <Import Project="$(NuGetPackageRoot)esri.arcgisruntime.wpf\200.2.0\buildTransitive\netcoreapp\Esri.ArcGISRuntime.WPF.targets" Condition="Exists('$(NuGetPackageRoot)esri.arcgisruntime.wpf\200.2.0\buildTransitive\netcoreapp\Esri.ArcGISRuntime.WPF.targets')" />
+  </ImportGroup>
+</Project>
